@@ -1,4 +1,7 @@
-//* Calculator -- start --
+export default class CalculatorMain {
+  
+}
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
       this.previousOperandTextElement = previousOperandTextElement
@@ -126,57 +129,49 @@ class Calculator {
     calculator.updateDisplay()
   })
   
-  // let calculatorInput = document.querySelector('.calculator.grid');
-  document.addEventListener('keydown', function (event) {
-    const calculatorElement = document.getElementsByClassName('calculator-grid'); 
+
+//   document.addEventListener('keydown', function (event) {
+
+//     let patternForNumbers = /[0-9]/g;
+//     let patternForOperators = /[+\-*\/]/g;
+
+//     if (event.key.match(patternForNumbers)) {
+//       event.preventDefault();
+//       event.stopImmediatePropagation();
+//       calculator.appendNumber(event.key)
+//       calculator.updateDisplay()
+//     }
+//     if (event.key === '.') {
+//       event.preventDefault(); 
+//       event.stopImmediatePropagation();
+//       calculator.appendNumber(event.key)
+//       calculator.updateDisplay()
+//     }
+//     if (event.key.match(patternForOperators)) {
+//       event.preventDefault(); 
+//       event.stopImmediatePropagation();
+//       calculator.chooseOperation(event.key)
+//       calculator.updateDisplay()
+//     }
+//     if (event.key === 'Enter' || event.key === '=') {
+//       event.preventDefault();
+//       event.stopImmediatePropagation();
+//       calculator.compute()
+//       calculator.updateDisplay()
+//     }
+//     if (event.key === "Backspace") {
+//       event.preventDefault(); 
+//       event.stopImmediatePropagation();
+//       calculator.delete()
+//       calculator.updateDisplay()
+//     }
+//     if (event.key == 'Delete') {
+//       event.preventDefault();
+//       event.stopImmediatePropagation(); 
+//       calculator.clear()
+//       calculator.updateDisplay()
+//     }
   
-    if (document.activeElement === calculatorElement || calculatorElement.contains(document.activeElement)) {
-      return;
-    }
+//   });
 
-    // if (document.activeElement !== calculatorInput) {
-      
-    // }                 //!
-
-    let patternForNumbers = /[0-9]/g;
-    let patternForOperators = /[+\-*\/]/g
-
-    if (event.key.match(patternForNumbers)) {
-      event.preventDefault();
-      calculator.appendNumber(event.key)
-      calculator.updateDisplay()
-    }
-    if (event.key === '.') {
-      event.preventDefault();
-      event.stopPropagation(); 
-      calculator.appendNumber(event.key)
-      calculator.updateDisplay()
-    }
-    if (event.key.match(patternForOperators)) {
-      event.preventDefault();
-      event.stopPropagation(); 
-      calculator.chooseOperation(event.key)
-      calculator.updateDisplay()
-    }
-    if (event.key === 'Enter' || event.key === '=') {
-      event.preventDefault();
-      event.stopPropagation(); 
-      calculator.compute()
-      calculator.updateDisplay()
-    }
-    if (event.key === "Backspace") {
-      event.preventDefault();
-      event.stopPropagation(); 
-      calculator.delete()
-      calculator.updateDisplay()
-    }
-    if (event.key == 'Delete') {
-      event.preventDefault();
-      event.stopPropagation(); 
-      calculator.clear()
-      calculator.updateDisplay()
-    }
-  
-  });
-
-  //* Calculator -- end --
+ 

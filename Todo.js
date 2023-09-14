@@ -1,5 +1,6 @@
-//* To do --- start---
-
+export default class TodoMain {
+  
+}
 
 
 let checkElements = document.getElementsByClassName('circle-check-todo');
@@ -16,25 +17,14 @@ let textbox = document.querySelector('.new-task-input');
 let addButton = document.querySelector('.submit');
 
 
-// document.addEventListener('keydown', function (event) {
-//   let patternForText = /[0-9]/g;
-//   let patternForOperatorsText = /[+\-*\/]/g
-//   if (event.key.match(patternForText)) {
-//     event.preventDefault();
-//     newTask.appendNumber(event.key)
-//     newTask.updateDisplay()
-//   }
-// });
-
-
 textbox.addEventListener('keydown', function (event) {
     if (event.key === 'Backspace') {
       event.preventDefault();
-      event.stopPropagation();                               //* Prevent the default backspace behavior which navigates back in the browser
+      event.stopImmediatePropagation();                                                      //* Prevent the default backspace behavior which navigates back in the browser
       textbox.value = textbox.value.slice(0, -1);           //* Remove the last character from the input value
     } else if (event.key === 'Enter') {
       event.preventDefault();
-      event.stopPropagation(); 
+      event.stopImmediatePropagation(); 
       addButton.click();
     }
   });

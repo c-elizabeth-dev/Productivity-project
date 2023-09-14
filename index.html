@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Pacifico&family=Rubik&display=swap" rel="stylesheet">
-    <script src="todo-script.js" defer></script>
-    <script src="calendar-script.js" defer></script>
-    <script src="calculator-script.js" defer></script>
+    <!-- <script type="module" src="Todo.js"></script>
+    <script type="module" src="Calendar.js"></script>
+    <script type="module" src="Calculator.js"></script> -->
+    <script type= "module" src="main.js"></script>
+
     <title>Project 1</title>
 </head>
 <body>
 <main>
 
 
-<div class="main-container-todo">
+<div id="app1" class="main-container-todo">
     <div class="h1-todo"><h1>To Do</h1></div>
 
     <div class="dynamic-container-todo">
@@ -32,7 +34,7 @@
 
 
 
-<div class="calendar-container">
+<div id="app2" class="calendar-container">
     <header class="calendar-header">
         <p class="calendar-current-date"></p>
         <div class="calendar-navigation">
@@ -59,7 +61,7 @@
     </div>
 </div>
 
-<div class="calculator-grid">
+<div id="app3" class="calculator-grid">
     <div class="output">
 <div data-previous-operand class="previous-operand"></div>
 <div data-current-operand class="current-operand"></div>
@@ -87,8 +89,8 @@
     </div>
 
 
-    <div id="app">
-        <table class="budget-tracker">
+    <div id="app4" class="tracker-container">
+        <!-- <table class="budget-tracker">
             <thead>
                 <tr>
                     <th>Date</th>
@@ -122,8 +124,9 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td colspan="5" class="controls"></td>
-                    <button type="button" class="new-entry">New Entry</button>
+                    <td colspan="5" class="controls"><button type="button" class="new-entry">New Entry</button>
+                    </td>
+                    
                 </tr>
             </tbody>
             <tfoot>
@@ -134,14 +137,12 @@
                     </td>
                 </tr>
             </tfoot>
-        </table>
+        </table> -->
     </div>
 
 
 
-        <!-- <div class="counter">
-            Counter
-        </div> -->
+
 
 </main>
 

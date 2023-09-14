@@ -1,4 +1,6 @@
-  //* Calendar ---Start ---
+export default class Calendar {
+  
+}
 
   let date = new Date();
   let year = date.getFullYear();
@@ -71,4 +73,3 @@ prevNextIcons.forEach(icon => {
     });
 });
 
-//* ---Calendar End ---
