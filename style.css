@@ -75,17 +75,19 @@ h1 {
 
 .new-created-task {                    
     display: flex;
+    align-items: flex-end;
 }
 
 
 .delete-icon {
-    color: var(--colorSeven);
+    color: var(--colorThree);
     font-size: 30px;
+    
 
 }
-.delete-icon:hover {
+/* .delete-icon:hover {
     color:var(--colorThree);
-}
+} */
 
 
 
@@ -342,6 +344,8 @@ header .calendar-current-date {
             padding: 10px;
             margin-top: 15px;
             margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
             word-wrap: break-word;
             word-break: break-all;
             border-radius: 50px;
@@ -361,6 +365,16 @@ header .calendar-current-date {
           }
 
 /* * Calculator --- end --- */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -386,17 +400,24 @@ header .calendar-current-date {
       }
       .main-container-todo {
         grid-column: 1 / span 1; 
-        width:90%;
+        width:100%;
         margin: 20px 40px; 
       }
+
+      .delete-icon {
+        color: var(--colorThree);
+        font-size: 30px;
+    
+    }
+
       .calculator-grid {
         grid-column: 1 / span 1; 
-        width:90%;
+        width:100%;
         margin: 20px 40px; 
       }
       .calendar-container {
         grid-column: 1 / span 1; 
-        width:90%;
+        width:100%;
         margin: 20px 40px; 
       }
 }
@@ -411,7 +432,7 @@ header .calendar-current-date {
   
     .main-container-todo {
       grid-column: 1 / span 1; 
-      width: 90%; 
+      width: 100%; 
       margin: 20px 20px; 
     }
 
@@ -424,16 +445,22 @@ header .calendar-current-date {
         font-size: 14px; 
         max-height: 40px; 
       }
+
+      .delete-icon {
+        color: var(--colorThree);
+        font-size: 30px;
+    
+    }
   
     .calculator-grid {
       grid-column: 1 / span 1; 
-      width: 90%;
+      width: 100%;
       margin: 20px 20px; 
     }
   
     .calendar-container {
       grid-column: 1 / span 1; 
-      width: 90%;
+      width: 100%;
       margin: 20px 20px; 
     }
   }

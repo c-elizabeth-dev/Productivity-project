@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Pacifico&family=Rubik&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="todo-script.js" defer></script>
+    <script src="calendar-script.js" defer></script>
+    <script src="calculator-script.js" defer></script>
     <title>Project 1</title>
 </head>
 <body>
@@ -83,6 +85,58 @@
     <button data-equals class="span-two">=</button>
 <!-- </div> -->
     </div>
+
+
+    <div id="app">
+        <table class="budget-tracker">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="entries">
+                <tr>
+                    <td>
+                        <input class="input input-date" type="date">
+                    </td>
+                    <td>
+                        <input class="input input-description" type="text" placeholder="Add a description...">
+                    </td>
+                    <td>
+                        <select class="input input-type">
+                            <option value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" class="input input-amount">
+                    </td>
+                    <td>
+                        <button type="button" class="delete-entry">&#10005;</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="controls"></td>
+                    <button type="button" class="new-entry">New Entry</button>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="summary">
+                        <strong>Total:</strong>
+                        <span class="Total">£0.00</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
 
 
         <!-- <div class="counter">
