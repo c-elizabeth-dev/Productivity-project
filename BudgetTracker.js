@@ -36,7 +36,7 @@ export default class BudgetTracker {
             <tr>
                 <td colspan="5" class="summary">
                     <strong>Total:</strong>
-                    <span class="Total">£0.00</span>
+                    <span class="total">£0.00</span>
                 </td>
             </tr>
         </tfoot>
@@ -85,7 +85,7 @@ export default class BudgetTracker {
             return total + (amount * modifier);
         }, 0);
 
-        const totalFormatted = new Intl.NumberFormat("en-UK", {
+        const totalFormatted = new Intl.NumberFormat("en-GB", {
             style: "currency",
             currency: "GBP"
         }).format(total);
@@ -132,7 +132,7 @@ export default class BudgetTracker {
         this.addEntry();
     }
 
-    onDeleteEntryBtnClick() {
+    onDeleteEntryBtnClick(e) {
         e.target.closest("tr").remove();
         this.save();
     }

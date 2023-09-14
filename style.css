@@ -375,12 +375,20 @@ header .calendar-current-date {
 /* * budget tracker --- start --- */
 
 .tracker-container{
-    grid-column: 2/ span 10;
+    grid-column: 2/ span 8;
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    background-color: var(--colorOne);
+    border-radius: 20px;
+    min-width: 90%;
 }
 
 .budget-tracker {
     border-collapse: collapse;
-    min-width: 750px;
+    min-width: 90%;
+    margin: 10px;
+    padding:5px 10px;
     
 }
 
@@ -415,13 +423,14 @@ header .calendar-current-date {
 
 .input {
     border: 1px solid var(--colorFour);
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
+    color:var(--colorThree);
 
 }
 
 .input:focus {
-    border-color: var(--colorFive);
+    border: 3px solid var(--colorFive);
 }
 
 .delete-entry {
@@ -444,9 +453,21 @@ header .calendar-current-date {
 
 .controls {
     text-align: right;
+    
+}
+
+.new-entry{
+    border-radius: 20px;
+    font-size: 15px;
+    background: var(--colorThree);
+    color: var(--colorSeven);
+    border:none;
+    padding:8px;
 }
 .summary {
     text-align: right;
+    color: var(--colorSeven);
+    font-size: 20px;
 }
 
 

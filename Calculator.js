@@ -130,48 +130,48 @@ class Calculator {
   })
   
 
-//   document.addEventListener('keydown', function (event) {
+  // document.addEventListener('keydown', function (event) {
 
-//     let patternForNumbers = /[0-9]/g;
-//     let patternForOperators = /[+\-*\/]/g;
+  //   let patternForNumbers = /[0-9]/g;
+  //   let patternForOperators = /[+\-*\/]/g;
 
-//     if (event.key.match(patternForNumbers)) {
-//       event.preventDefault();
-//       event.stopImmediatePropagation();
-//       calculator.appendNumber(event.key)
-//       calculator.updateDisplay()
-//     }
-//     if (event.key === '.') {
-//       event.preventDefault(); 
-//       event.stopImmediatePropagation();
-//       calculator.appendNumber(event.key)
-//       calculator.updateDisplay()
-//     }
-//     if (event.key.match(patternForOperators)) {
-//       event.preventDefault(); 
-//       event.stopImmediatePropagation();
-//       calculator.chooseOperation(event.key)
-//       calculator.updateDisplay()
-//     }
-//     if (event.key === 'Enter' || event.key === '=') {
-//       event.preventDefault();
-//       event.stopImmediatePropagation();
-//       calculator.compute()
-//       calculator.updateDisplay()
-//     }
-//     if (event.key === "Backspace") {
-//       event.preventDefault(); 
-//       event.stopImmediatePropagation();
-//       calculator.delete()
-//       calculator.updateDisplay()
-//     }
-//     if (event.key == 'Delete') {
-//       event.preventDefault();
-//       event.stopImmediatePropagation(); 
-//       calculator.clear()
-//       calculator.updateDisplay()
-//     }
+  //   if (event.key.match(patternForNumbers)) {
+  //     event.preventDefault();
+  //     event.stopImmediatePropagation();
+  //     calculator.appendNumber(event.key)
+  //     calculator.updateDisplay()
+  //   }
+  //   if (event.key === '.') {
+  //     event.preventDefault(); 
+  //     event.stopImmediatePropagation();
+  //     calculator.appendNumber(event.key)
+  //     calculator.updateDisplay()
+  //   }
+  //   if (event.key.match(patternForOperators)) {
+  //     event.preventDefault(); 
+  //     event.stopImmediatePropagation();
+  //     calculator.chooseOperation(event.key)
+  //     calculator.updateDisplay()
+  //   }
+  //   if (event.key === 'Enter' || event.key === '=') {
+  //     event.preventDefault();
+  //     event.stopImmediatePropagation();
+  //     calculator.compute()
+  //     calculator.updateDisplay()
+  //   }
+  //   if (event.key === "Backspace") {
+  //     event.preventDefault(); 
+  //     event.stopImmediatePropagation();
+  //     calculator.delete()
+  //     calculator.updateDisplay()
+  //   }
+  //   if (event.key == 'Delete') {
+  //     event.preventDefault();
+  //     event.stopImmediatePropagation(); 
+  //     calculator.clear()
+  //     calculator.updateDisplay()
+  //   }
   
-//   });
+  // });
 
  
