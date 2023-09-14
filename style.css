@@ -378,15 +378,14 @@ header .calendar-current-date {
     grid-column: 2/ span 8;
     display: flex;
     justify-content: center;
-    margin:20px;
     background-color: var(--colorOne);
     border-radius: 20px;
-    min-width: 90%;
+    min-width: 100%;
 }
 
 .budget-tracker {
     border-collapse: collapse;
-    min-width: 90%;
+    width: 90%;
     margin: 10px;
     padding:5px 10px;
     
