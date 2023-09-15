@@ -45,7 +45,7 @@ export default class BudgetTracker {
 
     static entryHtml() {
         return `
-        <tr>
+        <tr class=input-row>
             <td>
                 <input class="input input-date" type="date">
             </td>
