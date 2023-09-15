@@ -3,6 +3,14 @@ export default class TodoMain {
 }
 
 
+let newTask = document.querySelector('.appended-area');             
+let textbox = document.querySelector('.new-task-input');          
+let addButton = document.querySelector('.submit');
+
+
+
+
+
 let checkElements = document.getElementsByClassName('circle-check-todo');
 
 
@@ -12,9 +20,6 @@ for (let i=0; i < checkElements.length; i++) {
     })
 }
 
-let newTask = document.querySelector('.appended-area');
-let textbox = document.querySelector('.new-task-input');
-let addButton = document.querySelector('.submit');
 
 
 textbox.addEventListener('keydown', function (event) {

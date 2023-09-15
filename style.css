@@ -41,9 +41,6 @@ main {
     width: 400px;
 }
 
-.new-task-input:focus {
-    border: 2px solid var(--colorFive);
-}
 
 .h1-todo {
     display: flex;
