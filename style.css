@@ -642,6 +642,10 @@ header .calendar-current-date {
         font-size: 12px;
       }
 
+    .input-row {
+        max-width: 90vw;
+    }
+
     .input-description {
         width: 100px;
       }
